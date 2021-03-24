@@ -1,0 +1,7 @@
+API : # Enter your API key in the below blank line
+
+API Secret : # Enter your API Secret key in the below blank line
+
+Token : # Enter your Token key in the below blank line
+
+Token Secret : # Enter your Token Secret key in the below blank line
