@@ -2,8 +2,6 @@ from tkinter import *
 from tkinter.ttk import Scale
 from tkinter import colorchooser,messagebox,filedialog
 import main
-import subprocess
-subprocess.call(['notepad.exe', 'file.txt'])
 
 class search():
     def __init__(self,root):
