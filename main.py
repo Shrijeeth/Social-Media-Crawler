@@ -4,11 +4,13 @@ from nltk.stem import PorterStemmer
 import sentiment_model
 import io
 
-API = 'cnIdIOpoZw1t0PpGBvlej03BZ'
-API_SECRET = '9VfhArGpfiGuSTxtwy0OH4Lrf8zMzVmVqven1jjICvOpC6QnVV'
-
-TOKEN = '1449131066-ITGeYx7vsWEgnvZyYtVowR1WWDT0cw0er7Jszpi'
-TOKEN_SECRET = 'x5mGO6USkZM459htGICoZrC9cDbdbGBqiFhlglOziqBgr'
+f = open('api.txt')
+l = f.readlines()
+API = l[1][:-1]
+API_SECRET = l[3][:-1]
+TOKEN = l[5][:-1]
+TOKEN_SECRET = l[7][:-1]
+f.close()
 
 auth = tweepy.OAuthHandler(API,API_SECRET)
 auth.set_access_token(TOKEN,TOKEN_SECRET)
